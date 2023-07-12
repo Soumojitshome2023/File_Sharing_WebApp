@@ -83,7 +83,8 @@ main {
     box-shadow: 0 0 10px 5px rgb(193, 85, 255);
     border-radius: 20px;
     height: fit-content;
-    width: fit-content;
+    /* width: fit-content; */
+    width: 100%;
     padding: 5px;
     display: flex;
     justify-content: center;
@@ -93,7 +94,6 @@ main {
     padding-top: 5px;
     /* height: 80vh; */
     /* width: 100vw; */
-
 }
 
 .section_heading {
