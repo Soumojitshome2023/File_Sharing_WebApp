@@ -11,7 +11,8 @@ body {
     height: fit-content;
     display: flex;
     /* background: linear-gradient(to right, #b9b8b8, #f0615c); */
-    background: linear-gradient(#838282, #f0615c);
+    /* background: linear-gradient(#838282, #f0615c); */
+    background: linear-gradient(to top, #1e130c, #9a8478);
     background-attachment: fixed;
     flex-direction: column;
     align-items: center;
