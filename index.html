@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Sharing App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+
+    <!-- ====================Meta Tags==================== -->
+
+    <meta name="theme-color" content="#a8603e" />
+
+    <meta name="title" content="File Sharing Website | Soumojit Shome">
+    <meta name="description" content="File Sharing Website | Soumojit Shome">
+    <meta name="keywords" content="file share, file sharing websites, soumojit shome">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="5 days">
+    <meta name="author" content="Soumojit Shome">
+
+
+    <meta property="og:title" content=File Sharing Website | Soumojit Shome>
+    <meta property="og:site_name" content=File Sharing Website | Soumojit Shome>
+    <meta property="og:url" content=fileshare.vercel.app>
+    <meta property="og:description" content=File Sharing Website | Soumojit Shome>
+    <meta property="og:type" content=website>
+    <meta property="og:image" content=https://mobiletrans.wondershare.com/phone-transfer/file-transfer-app-for-pc.html>
+
+
+    <!-- ================================================== -->
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+
+    <script src="https://kit.fontawesome.com/813697e957.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+
+</head>
+
+<body>
+
+    <!-- ==================Main Heading================== -->
+    <section id="heading"><i class="fa-sharp fa-solid fa-share-nodes"></i> File <span>Share</span></section>
+
+    <!-- ==================Main Section Start================== -->
+    <section id="drag_and_drop_sec">
+        <p><i class="fa fa-upload" aria-hidden="true"></i>
+            Drop file here
+        </p>
+    </section>
+    <main>
+
+
+        <!-- ==================Upload & Send Section================== -->
+        <section id="upload_section">
+            <div class="section_heading">Upload & Send
+
+                <p>Drag and Drop Your File Here</p>
+            </div>
+
+            <div class="inputContainer">
+                <input required="required" id="folder_name_inputField" placeholder="Create or Add Your Folder Name"
+                    type="text">
+                <label class="usernameLabel" for="folder_name_inputField">Create or Add Your Folder Name</label>
+                <svg viewBox="0 0 448 512" class="userIcon">
+                    <path
+                        d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z">
+                    </path>
+                </svg>
+            </div>
+
+
+
+            <label for="input_file_option" id="input_file_option_label"><i class='far fa-folder'
+                    style='font-size:24px'></i> Choose Files</label>
+            <input type="file" id="input_file_option" multiple>
+
+
+            <span id="file_name">
+                <!-- <div> <i class="fa-solid fa-file"></i> File Name : </div> -->
+
+            </span>
+
+
+            <button id="upload_file_btn" class="btn" onclick="upload_file()"><i class="fa fa-upload"
+                    aria-hidden="true"></i>
+                Upload
+            </button>
+            <span id="upload_status"></span>
+
+        </section>
+
+
+
+        <!-- ==================Download & Receive Section================== -->
+        <section id="download_section">
+            <div class="section_heading">Download & Receive</div>
+
+            <div class="input__container">
+                <label class="input__label">Your Folder Name</label>
+                <input placeholder="Enter Your Folder Name" class="input" name="text" type="text" id="your_code">
+
+            </div>
+
+
+            <button id="get_file_btn" class="btn" onclick="get_file()">
+                <i class="fa fa-download" aria-hidden="true"></i>
+                Get
+            </button>
+
+
+            <span id="your_files_heading">
+                <!-- <div><i class="fa-solid fa-file"></i> Your Files : </div> -->
+            </span>
+
+            <div class="loader" id="data_lodar_ani">
+                <div class="justify-content-center jimu-primary-loading"></div>
+            </div>
+
+
+            <span id="dlink">
+
+                <!-- <a href="${downloadURL}" target="_blank" download>
+                    <div class="card">
+                        <span></span>
+                        <div class="content"><i class="fa-solid fa-file"></i> ${fileRef.name}</div>
+                    </div>
+                </a> -->
+
+            </span>
+
+        </section>
+
+
+    </main>
+
+    <!-- ==================CopyRight Section================== -->
+    <section id="copyright">
+
+        <a href="https://iamsoumojit.vercel.app" target="_blank">
+            <button class="copyright_btn">
+                <span class="copyright_btn_button-content">Designed by Soumojit Shome</span>
+            </button>
+        </a>
+    </section>
+
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
