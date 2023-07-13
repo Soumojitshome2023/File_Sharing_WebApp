@@ -45,7 +45,7 @@ document.getElementById("input_file_option").addEventListener("change", () => {
 })
 
 document.getElementById("folder_name_inputField").addEventListener("input", () => {
-  document.getElementById("file_name").innerHTML = `<div><i class="fa-solid fa-shield-halved"></i> Please Create A Strong Folder Name</div>`;
+  document.getElementById("upload_status").innerHTML = `<div><i class="fa-solid fa-shield-halved"></i> Please Create A Strong Folder Name</div>`;
 })
 
 
